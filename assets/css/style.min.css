@@ -135,7 +135,6 @@ body {
   font-family: Formular;
   font-weight: 500;
   color: #52565f;
-  background: #e5e5e5;
 }
 
 main {
@@ -176,6 +175,7 @@ main {
 }
 
 .offer__main-title {
+  max-width: 800px;
   font-family: LavaPro;
   font-weight: 700;
   font-size: 60px;
@@ -234,7 +234,7 @@ main {
   flex-wrap: wrap;
 }
 .manager__main-item {
-  max-width: 381px;
+  width: 381px;
   margin-bottom: 75px;
 }
 .manager__main-title {
@@ -285,6 +285,12 @@ main {
   max-width: 698px;
   text-align: left;
 }
+.purchase .purchase__left-text {
+  font-size: 20px;
+}
+.purchase .purchase__left-text span {
+  font-size: 25px;
+}
 .purchase__main {
   margin-top: 75px;
   display: flex;
@@ -294,7 +300,6 @@ main {
 .purchase__left-item > div {
   display: flex;
   align-items: center;
-  max-width: 506px;
   margin-bottom: 50px;
 }
 .purchase__left-item img {
@@ -372,17 +377,58 @@ main {
   font-size: 18px;
   color: #c1c8cf;
 }
-.form form input[type=checkbox] {
+.form form .checkbox {
+  position: relative;
+}
+.form form .checkbox-input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  border: none;
+}
+.form form .checkbox-label {
+  display: block;
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.form form .checkbox-label a {
+  color: #6cb6ff;
+}
+.form form .checkbox-label::before {
+  content: "";
+  display: block;
   width: 30px;
   height: 30px;
-  margin-right: 10px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-.form form .form-checkbox {
-  display: flex;
-  align-items: center;
+.form form .checkbox-label::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/form/check.png") no-repeat;
+  background-size: 24px 24px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  z-index: 2;
+  opacity: 0;
 }
-.form form .form-checkbox a {
-  color: #6cb6ff;
+.form form .checkbox-input:checked + .checkbox-label::before {
+  background-color: #0d87ff;
+  border-color: blue;
+}
+.form form .checkbox-input:checked + .checkbox-label::after {
+  opacity: 1;
 }
 .form form .btn {
   display: block;
@@ -615,7 +661,11 @@ main {
     font-size: 15px;
   }
 
-  .form form .form-checkbox a {
+  .form form .checkbox label {
+    padding-top: 0;
+  }
+
+  .form form .checkbox a {
     font-size: 15px;
   }
 }
