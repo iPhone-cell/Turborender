@@ -777,6 +777,10 @@ main {
         padding: 30px 0 30px;
     }
 
+    .manager__main-btn {
+        width: 100%;
+    }
+
     .section-title {
         font-size: 20px;
     }
