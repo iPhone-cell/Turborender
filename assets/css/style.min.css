@@ -386,6 +386,7 @@ main {
   appearance: none;
   position: absolute;
   border: none;
+  z-index: -1;
 }
 .form form .checkbox-label {
   z-index: 2;
