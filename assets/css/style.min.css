@@ -175,7 +175,7 @@ main {
 }
 
 .offer__main-title {
-  max-width: 900px;
+  max-width: 900px!important;
   font-family: LavaPro;
   font-weight: 700;
   font-size: 60px;
