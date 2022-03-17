@@ -208,10 +208,15 @@ main {
 }
 
 .offer__footer-number {
-  font-family: Formular;
+  font-family: LavaPro;
   font-weight: 900;
   font-size: 60px;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.offer__footer-number span {
+  display: block;
 }
 
 .offer__footer-text {
@@ -319,10 +324,15 @@ main {
   text-align: center;
 }
 .purchase__right-price {
-  font-family: Formular;
+  font-family: LavaPro;
   font-weight: 700;
   font-size: 60px;
   color: #0d87ff;
+  display: flex;
+  align-items: center;
+}
+.purchase__right-price span {
+  display: block;
 }
 .purchase__right-text {
   font-size: 20px;
