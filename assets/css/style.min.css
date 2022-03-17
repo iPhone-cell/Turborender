@@ -175,7 +175,7 @@ main {
 }
 
 .offer__main-title {
-  max-width: 800px;
+  max-width: 900px;
   font-family: LavaPro;
   font-weight: 700;
   font-size: 60px;
@@ -208,7 +208,7 @@ main {
 }
 
 .offer__footer-number {
-  font-family: LavaPro;
+  font-family: Formular;
   font-weight: 900;
   font-size: 60px;
   margin-right: 20px;
@@ -324,8 +324,8 @@ main {
   text-align: center;
 }
 .purchase__right-price {
-  font-family: LavaPro;
-  font-weight: 900;
+  font-family: Formular;
+  font-weight: 700;
   font-size: 60px;
   color: #0d87ff;
   display: flex;
