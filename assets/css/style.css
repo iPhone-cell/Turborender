@@ -431,7 +431,8 @@ main {
     position: relative;
 }
 
-.form form .checkbox-input {
+.form form input.checkbox-input {
+    width: 30px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
